@@ -1,0 +1,70 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do Website */
+body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%; /* Divisão do espaço em duas colunas */
+    grid-template-rows: auto; /* Altura automática */
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%; /* Divisão do espaço em duas colunas */
+    grid-template-rows: 20% 70% 10%; /* Altura automática */
+}
+
+/* Barra de Navegação */
+#navbar {
+    border: 1px solid black;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 1%; /* Ajuste o padding para se encaixar melhor */
+    width: 100%; /* Ajuste para ocupar 100% da largura */
+}
+
+#barra-de-navegacao {
+    list-style-type: none; /* Remove os marcadores de lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    justify-content: space-around; /* Espaço uniforme entre os itens */
+    padding: 0; /* Remova o preenchimento padrão da lista */
+    margin: 0;
+}
+
+.item-navbar {
+    width: auto; /* Defina a largura automática para que os itens se ajustem ao conteúdo */
+}
+
+/* Tela de Login */
+#login-screen {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 1%;
+    padding: 1%;
+}
+
+/* Seção Central */
+#secao {
+    border: 1px solid black;
+}
+
+/* Coluna Lateral */
+#coluna {
+    border: 1px solid black;
+    margin: 1%;
+}
+
+/* Rodapé */
+#rodape {
+    border: 1px solid black;
+    width: 100%; /* Ajusta o rodapé para ocupar 100% da largura */
+}
