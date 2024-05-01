@@ -8,63 +8,77 @@
 /* Corpo do Website */
 body {
     width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%; /* Divisão do espaço em duas colunas */
-    grid-template-rows: auto; /* Altura automática */
 }
 
 main {
-    width: 100%;
+    margin: 1%;
+    width: 98%;
     display: grid;
-    grid-template-columns: 60% 40%; /* Divisão do espaço em duas colunas */
-    grid-template-rows: 20% 70% 10%; /* Altura automática */
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas:
+        'navbar navbar'
+        'secao coluna'
+        'rodape rodape';
 }
 
-/* Barra de Navegação */
-#navbar {
+nav {
+    grid-area: navbar;
     border: 1px solid black;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; /* Alinha verticalmente ao centro */
-    padding: 1%; /* Ajuste o padding para se encaixar melhor */
-    width: 100%; /* Ajuste para ocupar 100% da largura */
-}
-
-#barra-de-navegacao {
-    list-style-type: none; /* Remove os marcadores de lista */
-    display: flex; /* Exibe os itens da lista em linha */
-    justify-content: space-around; /* Espaço uniforme entre os itens */
-    padding: 0; /* Remova o preenchimento padrão da lista */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
     margin: 0;
 }
 
+#barra-de-navegacao {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
 .item-navbar {
-    width: auto; /* Defina a largura automática para que os itens se ajustem ao conteúdo */
+    width: 20%;
+    margin: 1%;
+    padding: 1%;
 }
 
 /* Tela de Login */
-#login-screen {
+#tela-de-login {
     border: 1px solid black;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
     margin: 1%;
     padding: 1%;
 }
 
 /* Seção Central */
-#secao {
+section {
+    grid-area: secao;
     border: 1px solid black;
+    height: 100%;
 }
 
-/* Coluna Lateral */
-#coluna {
-    border: 1px solid black;
+p{
     margin: 1%;
+}
+
+img{
+    margin: 1%;
+}
+/* Coluna Lateral */
+aside {
+    width: 100%;
+    grid-area: coluna;
+    border: 1px solid black;
+    height: 100%;
 }
 
 /* Rodapé */
 #rodape {
+    grid-area: rodape;
+    width: 100%;
     border: 1px solid black;
-    width: 100%; /* Ajusta o rodapé para ocupar 100% da largura */
+    position: fixed;
+    bottom: 0;
 }
