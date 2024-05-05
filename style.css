@@ -1,0 +1,71 @@
+/* Corpo da página */ 
+body {
+    background-image: url(imagens/fundo3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    font-family: "Arial", "Helvetica", "sans-serif";
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Título */ 
+.titulo {
+    background-color: #0a0a0ac5;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Login screen */
+.login {
+    background-color: #0a0a0ac5;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Área Logada */ 
+.botoes,
+.login {
+    display: inline-block;
+    vertical-align: top; /* Alinha os elementos ao topo */
+    margin-top: 20px; /* Adiciona um espaço entre os elementos */
+}
+
+.botsup {
+    color: #ffffff;
+    text-decoration: none;
+    border: 3px solid #d1c2c1;
+    background-color: #80453E;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.botsup:hover {
+    background-color: #805b57;
+    cursor: pointer;
+}
+
+#nomeUsuario {
+    color: white;
+    margin-right: 10px; /* Adiciona espaço entre o nome do usuário e o botão de logout */
+}
+
+/* Corpo do cardápio */ 
+/* Corpo do cardápio */ 
+#menu-cardapio {
+    margin: 100px; /* Adicione margem entre os pratos */
+    padding: 10%; /* Ajuste o preenchimento dos pratos */
+    border: 3px solid white;
+}
+
+
+.prato .prato-img {
+    width: 300px;
+    height: 200px;
+}
